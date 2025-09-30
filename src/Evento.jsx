@@ -99,20 +99,30 @@ const eventos = [
 ];
 const Evento = () => {
   return (
-    <div className='bg-white bg-opacity-70 p-5 m-5 rounded-lg border-2'>
-     <h1>lista de evento</h1> 
-     <ul>
-        {eventos.map((evento) => (
-            <li key={evento.id}>
-            <h1>{evento.titulo}</h1>
-            <h1>Fecha: {evento.Fecha}</h1>
-            <h1>Hora: {evento.Hora}</h1>
-            <h1>Lugar: {evento.Lugar}</h1>
-            <h1>{evento.Descripcion}</h1>
-            </li>
+    <div className='p-5 m-5 text-white'>
+    <table class="table-fixed">
+  <thead>
+    <tr>
+      <th>Fecha</th>
+      <th>Hora</th>
+      <th>Lugar</th>
+        <th>Descripcion</th>
+    </tr>
+  </thead>
+  <tbody>
+      {eventos.map((evento) => (
+            <tr key={evento.id} className='hover:bg-gray-200 dark:hover:bg-gray-700'>
+                <td className='w-1/4 border-separate border-spacing-2 border border-gray-400'>{evento.Fecha}</td>
+                <td className='w-1/4 border-separate border-spacing-2 border border-gray-400 dark:border-gray-500'>{evento.Hora}</td>
+                <td className='w-1/4 border-separate border-spacing-2 border border-gray-400 dark:border-gray-500'>{evento.Lugar}</td>
+                <td className='w-1/4 border-separate border-spacing-2 border border-gray-400 dark:border-gray-500'>{evento.Descripcion}</td>
+            </tr>
         ))}
-     </ul>
+  </tbody>
+</table>
     </div>
+
+    
   );
 };
 
