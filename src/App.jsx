@@ -37,7 +37,7 @@ export default function App() {
       bgColor: "#0D0716",
       textColor: "#fff",
       links: [
-        { label: "Conocé", ariaLabel: "Inicio Conocé", link:"/home"},
+        { label: "Conocé", ariaLabel: "Inicio Conocé", link:"/"},
         { label: "Actividades: Dia del Turismo", ariaLabel: "Inicio Actividades", link:"/contact"},
         { label: "Fiestas Locales", ariaLabel: "Fiestas Locales Contacto", link: "/fiestas" }
       ]
@@ -82,7 +82,7 @@ export default function App() {
     <div className='bg-black/50 Min-h-screen w-full text-center p-5 '>
 <div className=' sd:p-20'>
     <Routes>
-  <Route path="/inicio" element={<Inicio />} />
+  <Route path="/" element={<Inicio />} />
   <Route path="/home" element={<Home />} />
   <Route path="/about" element={<About />} />
   <Route path="/contact" element={<Contact />} />
