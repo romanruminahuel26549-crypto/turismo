@@ -37,7 +37,7 @@ export default function App() {
       bgColor: "#0D0716",
       textColor: "#fff",
       links: [
-        { label: "Conocé", ariaLabel: "Inicio Conocé", link:"/"},
+        { label: "Conocé", ariaLabel: "Inicio Conocé", link:"/home" },
         { label: "Actividades: Dia del Turismo", ariaLabel: "Inicio Actividades", link:"/contact"},
         { label: "Fiestas Locales", ariaLabel: "Fiestas Locales Contacto", link: "/fiestas" }
       ]
@@ -67,7 +67,7 @@ export default function App() {
 
   return (
 
-    <div className=' bg-center bg-[url(https://tripin.travel/wp-content/uploads/2016/07/Laguna-La-Zeta-@juanbalestra-web.jpg)] bg-cover bg-no-repeat '>
+    <div className=' bg-center bg-[url(https://tripin.travel/wp-content/uploads/2016/07/Laguna-La-Zeta-@juanbalestra-web.jpg)] '>
       <CardNav
       logo={"https://www.entornoturistico.com/wp-content/uploads/2025/08/Logo-del-Dia-Mundial-del-Turismo-2025-en-espanol_HOR.png"}
       logoAlt="Company Logo"
@@ -82,7 +82,7 @@ export default function App() {
     <div className='bg-black/50 Min-h-screen w-full text-center p-5 '>
 <div className=' sd:p-20'>
     <Routes>
-  <Route path="/" element={<Inicio />} />
+  <Route path="/Inicio" element={<Inicio />} />
   <Route path="/home" element={<Home />} />
   <Route path="/about" element={<About />} />
   <Route path="/contact" element={<Contact />} />
