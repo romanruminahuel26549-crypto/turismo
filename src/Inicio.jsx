@@ -4,9 +4,9 @@ import TextType from './TextType.jsx'
 
 const Inicio = () => {
   return (
-    <div className=' h-screen w-full text-center items-center'>
+    <div className='h-screen w-full items-center flex justify-center'>
       <TextType 
-      className='text-white text-5xl mt-15 font-bold text-center w-full h-full'
+      className='text-white text-5xl font-bold w-full'
         text={["Dia del Turismo", "Bienvenidos a Esquel", "Feliz Dia del Turismo!"]}
       typingSpeed={75}
       pauseDuration={1500}

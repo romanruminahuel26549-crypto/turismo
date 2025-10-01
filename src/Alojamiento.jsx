@@ -2,7 +2,7 @@ import React from 'react'
 
 const Alojamiento = () => {
   return (
-    <div>
+    <div className='h-screen'>
         <p class="pt-10 font-[Open_Sans] ... m-5  text-white">
         Encontrá la opción ideal para tus necesidades y presupuesto, desde hoteles y hosterías a cabañas y departamentos
         </p>
