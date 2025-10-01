@@ -80,7 +80,7 @@ export default function App() {
     />
    
     <div className='bg-black/50 min-h-max w-full text-center p-5 '>
-<div className=' sd:p-20'>
+    <div className=' sd:p-20'>
     <Routes>
   <Route path="/" element={<Inicio />} />
   <Route path="/home" element={<Home />} />
