@@ -99,7 +99,7 @@ const eventos = [
 ];
 const Evento = () => {
   return (
-    <div className='p-5 m-5 text-white'>
+    <div className='m-5 text-white'>
     <table class="table-fixed">
   <thead>
     <tr>
