@@ -100,6 +100,9 @@ const eventos = [
 const Evento = () => {
   return (
     <div className='m-5 text-white'>
+        <h1 className='my-10'>
+            Componen la Fiesta un amplio conjunto de actividades presenciales que se realizarán tanto en Esquel y Trevelin, como en el Parque Nacional Los Alerces, evidenciando así el espíritu comarcal de la celebración. El cronograma completo y el detalle de la localización de cada una de las actividades de la edición 2025 se despliegan a continuación.
+        </h1>
     <table class="table-fixed">
   <thead>
     <tr>

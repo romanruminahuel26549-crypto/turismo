@@ -8,6 +8,7 @@ import Fiestas from './Fiestas.jsx';
 import Alojamiento from './Alojamiento.jsx';
 import Excursiones from './Excursiones.jsx';
 import Inicio from './Inicio.jsx';
+import Auspiciantes from './Auspiciantes.jsx';
 
 const Botones=()=>{
   const botones = [
@@ -78,7 +79,6 @@ export default function App() {
       buttonTextColor="#fff"
       ease="power3.out"
     />
-   
     <div className='bg-black/50 min-h-max w-full text-center p-5 '>
     <div className=' sd:p-20'>
     <Routes>
