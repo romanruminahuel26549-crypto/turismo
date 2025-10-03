@@ -4,11 +4,11 @@ import { Route, Routes } from 'react-router';
 import Home from './Home.jsx';
 import About from './About.jsx';
 import Contact from './Contact.jsx';
-import Fiestas from './Fiestas.jsx';
+import Organizadores from './Organizadores.jsx';
 import Alojamiento from './Alojamiento.jsx';
 import Excursiones from './Excursiones.jsx';
 import Inicio from './Inicio.jsx';
-import Auspiciantes from './Auspiciantes.jsx';
+import Carousel from './Carousel.jsx';
 
 const Botones=()=>{
   const botones = [
@@ -18,7 +18,8 @@ const Botones=()=>{
     { id: 4, texto: 'Contacto' },
     { id: 5, texto: 'Esqui La Hoya' }
   ];
-  
+
+
   return (
     <div className="flex justify-center">
       {botones.map((boton) => (
@@ -40,7 +41,7 @@ export default function App() {
       links: [
         { label: "Conocé", ariaLabel: "Inicio Conocé", link:"/home" },
         { label: "Actividades: Dia del Turismo", ariaLabel: "Inicio Actividades", link:"/contact"},
-        { label: "Fiestas Locales", ariaLabel: "Fiestas Locales Contacto", link: "/fiestas" }
+        { label: "Organizadores", ariaLabel: "Organizadores", link:"/organizadores" },
       ]
     },
     {
@@ -50,7 +51,6 @@ export default function App() {
       links: [
         { label: "Alojamiento", ariaLabel: "Alojamiento Planificaciones", link:"/alojamiento" },
         { label: "Excursiones y Aventura", ariaLabel: "Project Excursiones y Aventura", link:"/excursiones" },
-        { label: "Gastronomía", ariaLabel: "Gastronomía Planificaciones" },
       ]
     },
     {
@@ -67,7 +67,6 @@ export default function App() {
   ];
 
   return (
-
     <div className=' bg-center bg-[url(https://tripin.travel/wp-content/uploads/2016/07/Laguna-La-Zeta-@juanbalestra-web.jpg)] min-h-max bg-fixed'>
       <CardNav
       logo={"https://www.entornoturistico.com/wp-content/uploads/2025/08/Logo-del-Dia-Mundial-del-Turismo-2025-en-espanol_HOR.png"}
@@ -79,20 +78,21 @@ export default function App() {
       buttonTextColor="#fff"
       ease="power3.out"
     />
-    <div className='bg-black/50 min-h-max w-full text-center p-5 '>
+    <div className='bg-black/50 min-h-max w-full text-center p-5'>
     <div className=' sd:p-20'>
     <Routes>
   <Route path="/" element={<Inicio />} />
   <Route path="/home" element={<Home />} />
   <Route path="/about" element={<About />} />
   <Route path="/contact" element={<Contact />} />
-  <Route path="/fiestas" element={<Fiestas />} />
   <Route path="/alojamiento" element={<Alojamiento />} />
+  <Route path="/organizadores" element={<Organizadores />} />
   <Route path="/excursiones" element={<Excursiones />} />
   <Route path="de vuelta" element={<Inicio />} />
 
 </Routes>
 </div>
+
 
 
       </div>
